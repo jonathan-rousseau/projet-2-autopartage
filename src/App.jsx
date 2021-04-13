@@ -1,9 +1,11 @@
-import SampleComponent from './components/SampleComponent';
+import React from 'react';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Header />
+      <h3 style={{ padding: '40px' }}>Thanks For Reading!</h3>
     </div>
   );
 }
