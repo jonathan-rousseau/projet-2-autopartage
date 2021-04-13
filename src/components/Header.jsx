@@ -12,47 +12,43 @@ const Header = () => {
     <div className="header">
       <div className="logo-nav">
         <div className="logo-container">
-          <a href="#">
-            <Logo className="logo" />
-          </a>
+          <div className="mobile-menu" onClick={handleClick}>
+            {click ? (
+              <CloseMenu className="menu-icon" />
+            ) : (
+              <MenuIcon className="menu-icon" />
+            )}
+          </div>
+          <img
+            className="logo-voiture"
+            src="/images/picto-voiture-removebg.png"
+            alt="logo voiture"
+          />
+          <img
+            className="logo-marguerite"
+            src="/images/Logo_Marguerite-removebg.png"
+            alt="Logo marguerite"
+          />
+          <ul className={click ? 'nav-options active' : 'nav-options'}>
+            <li className="option" onClick={closeMobileMenu}>
+              <a href="#">Home</a>
+            </li>
+            <li className="option" onClick={closeMobileMenu}>
+              <a href="#">Mode demploi</a>
+            </li>
+            <li className="option" onClick={closeMobileMenu}>
+              <a href="#">Réservation marguerite</a>
+            </li>
+            <li className="option mobile-option" onClick={closeMobileMenu}>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <img className="devise" src="/images/devise.jpg" alt="devise" />
         </div>
-        <ul className={click ? 'nav-options active' : 'nav-options'}>
-          <li className="option" onClick={closeMobileMenu}>
-            <a href="#">ABOUT</a>
-          </li>
-          <li className="option" onClick={closeMobileMenu}>
-            <a href="#">CONTACT</a>
-          </li>
-          <li className="option" onClick={closeMobileMenu}>
-            <a href="#">BLOG</a>
-          </li>
-          <li className="option mobile-option" onClick={closeMobileMenu}>
-            <a href="#">SIGN-IN</a>
-          </li>
-          <li className="option mobile-option" onClick={closeMobileMenu}>
-            <a href="" className="sign-up">
-              SIGN-UP
-            </a>
-          </li>
-        </ul>
       </div>
-      <ul className="signin-up">
-        <li className="sign-in" onClick={closeMobileMenu}>
-          <a href="#">SIGN-IN</a>
-        </li>
-        <li onClick={closeMobileMenu}>
-          <a href="" className="signup-btn">
-            SIGN-UP
-          </a>
-        </li>
-      </ul>
-      <div className="mobile-menu" onClick={handleClick}>
-        {click ? (
-          <CloseMenu className="menu-icon" />
-        ) : (
-          <MenuIcon className="menu-icon" />
-        )}
-      </div>
+      <a href="#">
+        <Logo className="logo" />
+      </a>
     </div>
   );
 };
