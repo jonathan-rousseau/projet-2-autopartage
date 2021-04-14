@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 8em;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+h4 {
+  font-family: Roboto, sans-serif;
+}
+#flex {
+  background-color: #f9e373;
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+footer div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#logo {
+  height: 4em;
+  margin-left: 2px;
+}
+.contentFooter {
+  margin: 2px;
+  border-radius: 25px;
+  max-width: 50%;
+  height: 55%;
+}
+
+#pfooter {
+  display: flex;
+}
+
+#logoPic {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#logo {
+  margin-left: 1em;
+  border-radius: 12px;
+  margin: 3px;
+}
+#text {
+  width: 15em;
+  display: flex;
+  align-items: center;
+}
+
+#partDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 3em;
+  position: absolute;
+  margin-top: -35px;
+}
+
+.partenaire {
+  max-width: 15em;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: white;
+}
+
+@media screen and (min-width: 640px) {
+  #logoPic {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
