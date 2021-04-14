@@ -1,4 +1,10 @@
+import React from 'react';
+
 function SampleComponent() {
-  return <>Hello World</>;
+  return (
+    <div>
+      <h1> Hello </h1>
+    </div>
+  );
 }
 export default SampleComponent;

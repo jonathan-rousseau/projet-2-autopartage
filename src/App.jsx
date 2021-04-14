@@ -1,9 +1,10 @@
-import SampleComponent from './components/SampleComponent';
+import React from 'react';
+import Reservation from './components/Reservation';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <Reservation />
     </div>
   );
 }
