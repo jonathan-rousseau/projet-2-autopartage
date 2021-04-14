@@ -7,6 +7,7 @@
   padding: 0px 40px;
   height: 120px;
   box-shadow: 2px 2px rgb(66, 66, 66);
+  flex-wrap: wrap;
 }
 .logo-nav {
   display: flex;

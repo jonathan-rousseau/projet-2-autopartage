@@ -7,7 +7,6 @@ import './header.css';
 const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
   return (
     <div className="header">
       <div className="logo-nav">
@@ -30,23 +29,23 @@ const Header = () => {
             alt="Logo marguerite"
           />
           <ul className={click ? 'nav-options active' : 'nav-options'}>
-            <li className="option" onClick={closeMobileMenu}>
-              <a href="#">Home</a>
+            <li className="option">
+              <a href="/">Home</a>
             </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <a href="#">Mode demploi</a>
+            <li className="option">
+              <a href="/">Mode demploi</a>
             </li>
-            <li className="option" onClick={closeMobileMenu}>
-              <a href="#">Réservation marguerite</a>
+            <li className="option">
+              <a href="/">Réservation marguerite</a>
             </li>
-            <li className="option mobile-option" onClick={closeMobileMenu}>
-              <a href="#">Contact</a>
+            <li className="option mobile-option">
+              <a href="/">Contact</a>
             </li>
           </ul>
           <img className="devise" src="/images/devise.jpg" alt="devise" />
         </div>
       </div>
-      <a href="#">
+      <a href="/">
         <Logo className="logo" />
       </a>
     </div>
