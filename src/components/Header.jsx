@@ -31,7 +31,20 @@ const Header = () => {
           src="/images/logo_Marguerite-removebg.png"
           alt="Logo marguerite"
         />
-
+        <ul className={click ? 'nav-options active' : 'nav-options'}>
+          <li className="option">
+            <a href="/">Home</a>
+          </li>
+          <li className="option">
+            <a href="/">Mode demploi</a>
+          </li>
+          <li className="option">
+            <a href="/">Réservation marguerite</a>
+          </li>
+          <li className="option mobile-option">
+            <a href="/">Contact</a>
+          </li>
+        </ul>
         <img
           className="logo-profil"
           src="/images/logo-profil-removebg.png"
@@ -45,20 +58,6 @@ const Header = () => {
           alt="devise"
         />
       </div>
-      <ul className={click ? 'nav-options active' : 'nav-options'}>
-        <li className="option">
-          <a href="/">Home</a>
-        </li>
-        <li className="option">
-          <a href="/">Mode demploi</a>
-        </li>
-        <li className="option">
-          <a href="/">Réservation marguerite</a>
-        </li>
-        <li className="option mobile-option">
-          <a href="/">Contact</a>
-        </li>
-      </ul>
     </div>
   );
 };
