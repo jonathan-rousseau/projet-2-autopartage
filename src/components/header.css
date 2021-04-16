@@ -1,10 +1,8 @@
 /*Desktop View*/
 .header {
-  display: flex;
   background-color: #f9e373;
   justify-content: space-between;
-  align-items: center;
-  height: 120px;
+  /*height: 120px;*/
   box-shadow: 2px wit2px rgb(66, 66, 66);
 }
 
@@ -13,10 +11,8 @@
   justify-content: space-between;
 }
 .header-bottom {
-  justify-content: center;
   display: flex;
-}
-.logo-nav {
+  justify-content: center;
 }
 .logo-container {
   display: flex;
@@ -31,22 +27,17 @@
 }
 
 .logo-marguerite {
-  display: flex;
   height: 80px;
   width: 200px;
-  justify-content: center;
 }
 
 .logo-voiture {
-  display: flex;
   height: 50px;
   width: 80px;
-  align-items: center;
   display: none;
 }
 
 .logo-profil {
-  display: flex;
   width: 70px;
   height: 40px;
   margin-bottom: 50px;
