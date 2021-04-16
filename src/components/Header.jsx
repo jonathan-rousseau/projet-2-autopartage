@@ -33,6 +33,7 @@ const Header = () => {
               src="/images/Logo_Marguerite-removebg.png"
               alt="Logo marguerite"
             />
+
             <ul className={click ? 'nav-options active' : 'nav-options'}>
               <li className="option">
                 <a href="/">Home</a>
@@ -54,7 +55,11 @@ const Header = () => {
             />
           </div>
           <div className="header-bottom">
-            <img className="devise" src="/images/devise.jpg" alt="devise" />
+            <img
+              className="devise"
+              src="/images/devise-removebg.png"
+              alt="devise"
+            />
           </div>
         </div>
       </div>
