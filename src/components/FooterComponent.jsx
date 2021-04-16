@@ -47,7 +47,7 @@ function FooterComponent() {
           </div>
           <div id="droite">
             <div id="text">
-              <h4>Suivez nous sur :</h4>
+              <h4 className="follow">Suivez nous sur :</h4>
             </div>
             <a
               className="right"

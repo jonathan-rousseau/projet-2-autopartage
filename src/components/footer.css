@@ -90,7 +90,17 @@ a {
     justify-content: flex-start;
   }
 }
-@media screen and (max-width: 640px) {
-  a {
+@media screen and (max-width: 500px) {
+  .follow {
+    display: none;
+  }
+
+  #text {
+    width: 1em;
+  }
+  .partenaire {
+    width: 75%;
+    height: auto;
+    margin-bottom: -25px;
   }
 }
