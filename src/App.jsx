@@ -1,9 +1,9 @@
-import SampleComponent from './components/SampleComponent';
+import FooterComponent from './components/FooterComponent';
 
 function App() {
   return (
     <div className="App">
-      <SampleComponent />
+      <FooterComponent />
     </div>
   );
 }
