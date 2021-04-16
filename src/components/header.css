@@ -1,51 +1,48 @@
 /*Desktop View*/
 .header {
-  display: flex;
   background-color: #f9e373;
   justify-content: space-between;
-  align-items: center;
-  padding: 0px 40px;
-  height: 120px;
-  box-shadow: 2px 2px rgb(66, 66, 66);
-  flex-wrap: wrap;
+  /*height: 120px;*/
+  box-shadow: 2px wit2px rgb(66, 66, 66);
 }
-.logo-nav {
+
+.header-top {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+.header-bottom {
+  display: flex;
+  justify-content: center;
 }
 .logo-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 .logo {
   width: 45px;
   height: 45px;
 }
+.dispoLogo {
+  display: flex;
+}
 
 .logo-marguerite {
-  display: flex;
-  height: 100px;
+  height: 80px;
   width: 200px;
-  justify-content: center;
 }
 
 .logo-voiture {
-  display: flex;
   height: 50px;
   width: 80px;
-  align-items: center;
-  margin-left: -20px;
-  margin-bottom: 70px;
+  display: none;
 }
 
 .logo-profil {
-  display: flex;
-  width: 70px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
   margin-bottom: 50px;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .nav-options {
@@ -60,21 +57,30 @@
 }
 
 .option :hover {
-  color: white;
+  color: rgb(73, 73, 73);
 }
 
 .mobile-menu {
-  margin-bottom: 70px;
+  display: block;
 }
 @media (max-width: 648px) {
   /*Mobile View */
 
-  .header {
-    padding: 0px 10px;
+  ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
   }
+
   .logo {
     width: 45px;
     height: 45px;
+  }
+  .logo-voiture {
+    display: flex;
+    height: 50px;
+    width: 80px;
+    align-items: center;
   }
   .nav-options {
     display: flex;
@@ -98,6 +104,8 @@
     align-content: center;
     padding-left: 0px;
     margin: 0;
+    height: 100%;
+    text-align: center;
   }
 
   .menu-icon {
