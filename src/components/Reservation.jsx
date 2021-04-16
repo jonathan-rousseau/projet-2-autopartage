@@ -1,6 +1,9 @@
 import React from 'react';
 import './Reservation.css';
 
+const fidelite =
+  'https://media.discordapp.net/attachments/828980599762321419/832548533076754472/birthday-gifts.jpg';
+
 function Reservation() {
   return (
     <div className="contenair">
@@ -31,6 +34,9 @@ function Reservation() {
               Reserver
             </button>
           </div>
+        </div>
+        <div>
+          <img className="fidelite" src={fidelite} alt="fidelite" />
         </div>
       </main>
       <footer />

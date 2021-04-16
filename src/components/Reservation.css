@@ -4,14 +4,15 @@ body {
 .boutton {
   display:flex;
   flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color:orange;
   
 }
 .tarif{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-
  
 }
 .eco{
@@ -53,4 +54,9 @@ body {
   color: white;
   width: 120px;
   height: 60px;
+  cursor: pointer;
+}
+.fidelite{
+  margin-top: 40px;
+  width: 100%;
 }
