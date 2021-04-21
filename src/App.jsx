@@ -1,12 +1,11 @@
-import FooterComponent from './components/FooterComponent';
 import Header from './components/Header';
+import Inscription from './components/Inscription';
 
 function App() {
   return (
     <div className="App">
       <Header />
-
-      <FooterComponent />
+      <Inscription />
     </div>
   );
 }
