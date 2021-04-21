@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Reservation.css';
+import Calendar from 'react-calendar';
 
 const fidelite =
   'https://media.discordapp.net/attachments/828980599762321419/832548533076754472/birthday-gifts.jpg';
 
 function Reservation() {
+  const [isShow, setIsShow] = useState(false);
   return (
-    <div className="contenair">
+    <div className="container">
       <header />
       <main>
         <div className="direction-boutton">
-          <button className="boutton" type="button">
+          <button
+            className="boutton calendar"
+            type="button"
+            onClick={() => setIsShow(!isShow)}
+          >
             Date
           </button>
+          {isShow ? <Calendar /> : ''}
           <button className="boutton" type="button">
             Horaire
           </button>
