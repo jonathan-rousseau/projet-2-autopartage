@@ -2,7 +2,7 @@
 
 .wrapper {
   width: 100%;
-  height: 20em;
+  height: 100%;
   background-color: #fdf6d3;
   display: flex;
   justify-content: center;
@@ -15,10 +15,16 @@ form {
   margin: 0 auto;
 }
 
+login {
+  width: 100%;
+}
+
 #form {
-  width: 9em;
+  width: 100%;
   margin-bottom: 1em;
   border-radius: 5px;
+  border: none;
+  height: 3em;
 }
 
 #center {
@@ -46,6 +52,9 @@ a {
 span {
   color: #f95c0d;
 }
+button {
+  background-color: white;
+}
 
 @media screen and (min-width: 500px) {
   #center {
@@ -53,5 +62,6 @@ span {
   }
   #cross {
     max-width: 2%;
+    display: none;
   }
 }
