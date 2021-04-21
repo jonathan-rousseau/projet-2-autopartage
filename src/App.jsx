@@ -1,12 +1,11 @@
-import FooterComponent from './components/FooterComponent';
+import Profil from './components/Profil';
 import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
       <Header />
-
-      <FooterComponent />
+      <Profil />
     </div>
   );
 }

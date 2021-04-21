@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#wrapper {
+  background-color: #fdf6d3;
+  margin-top: 1em;
+}
+
+body {
+  font-family: roboto, sans-serif;
+}
+
+.white {
+  background-color: white;
+  margin: 1em;
+}
+#connexion {
+  display: flex;
+  justify-content: flex-end;
+  font-style: italic;
+  margin: 1em;
+}
+
+#inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+#euros {
+  margin: 1em;
+}
+#reservation {
+  margin-top: 1em;
+}
+span {
+  color: #f95c0d;
+}
+.param {
+  margin: 1em;
+}
