@@ -1,13 +1,23 @@
 body {
   width: 100%;
+  
 }
-.boutton {
+.boutton  {
   display:flex;
-  flex-direction: column;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 5px;
-  color:orange;
+  background-color: #FF5733;
+  color: white;
+  width: 80%;
+  border-radius: 15px 15px 15px 15px;
   
+}
+.direction-boutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .tarif{
   display: flex;
@@ -59,4 +69,5 @@ body {
 .fidelite{
   margin-top: 40px;
   width: 100%;
+  height:70%;
 }

@@ -9,10 +9,16 @@ function Reservation() {
     <div className="contenair">
       <header />
       <main>
-        <div className="boutton">
-          <button type="button">Date</button>
-          <button type="button">Horaire</button>
-          <button type="button">Localisation</button>
+        <div className="direction-boutton">
+          <button className="boutton" type="button">
+            Date
+          </button>
+          <button className="boutton" type="button">
+            Horaire
+          </button>
+          <button className="boutton" type="button">
+            Localisation
+          </button>
         </div>
         <div className="tarif">
           <div className="liberty">
