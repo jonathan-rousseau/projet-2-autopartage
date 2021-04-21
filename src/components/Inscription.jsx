@@ -33,7 +33,7 @@ function Inscription() {
             />
           </div>
           <div className="form-check-label" htmlFor="inlineRadio1">
-            Male
+            Monsieur
           </div>
           <div className="form-check form-check-inline">
             <input
@@ -45,7 +45,7 @@ function Inscription() {
             />
           </div>
           <div className="form-check-label" htmlFor="inlineRadio2">
-            Female
+            Madame
           </div>
         </div>
         <form name="login">
