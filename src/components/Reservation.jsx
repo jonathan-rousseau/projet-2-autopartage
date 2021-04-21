@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Reservation.css';
 import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 const fidelite =
   'https://media.discordapp.net/attachments/828980599762321419/832548533076754472/birthday-gifts.jpg';
