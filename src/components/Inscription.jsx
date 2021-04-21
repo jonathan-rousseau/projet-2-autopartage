@@ -1,5 +1,6 @@
 import React from 'react';
 import './Inscription.css';
+import './Inscription.scss';
 
 function Inscription() {
   return (
@@ -21,6 +22,29 @@ function Inscription() {
           <p>
             <em>C&apos; est simple et rapide...suivez le mouvement !</em>
           </p>
+        </div>
+        <div>
+          <input
+            id="toggle-on"
+            className="toggle toggle-left"
+            name="toggle"
+            value="false"
+            type="radio"
+            checked
+          />
+          <label htmlFor="toggle-on" className="btn">
+            Particulier{' '}
+          </label>
+          <input
+            id="toggle-off"
+            className="toggle toggle-right"
+            name="toggle"
+            value="true"
+            type="radio"
+          />
+          <label htmlFor="toggle-off" className="btn">
+            Entreprise{' '}
+          </label>
         </div>
         <div className="form-group">
           <div className="form-check form-check-inline">
