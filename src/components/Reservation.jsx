@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import './Reservation.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import TimeKeeper from 'react-timekeeper';
 
 const fidelite =
   'https://media.discordapp.net/attachments/828980599762321419/832548533076754472/birthday-gifts.jpg';
 
 function Reservation() {
   const [isShow, setIsShow] = useState(false);
+  const [isShowTime, setIsShowTime] = useState(false);
+
+  const [time, setTime] = useState('12:34pm');
   return (
     <div className="container">
       <header />
@@ -21,9 +25,16 @@ function Reservation() {
             Date
           </button>
           {isShow ? <Calendar /> : ''}
-          <button className="boutton" type="button">
+          <button
+            className="boutton"
+            type="button"
+            time={time}
+            onChange={(data) => setTime(data.formatted12)}
+            onClick={() => setIsShowTime(!isShowTime)}
+          >
             Horaire
           </button>
+          {isShowTime ? <TimeKeeper /> : ''}
           <button className="boutton" type="button">
             Localisation
           </button>
