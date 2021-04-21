@@ -18,6 +18,7 @@ form {
 #form {
   width: 9em;
   margin-bottom: 1em;
+  border-radius: 5px;
 }
 
 #center {
@@ -34,12 +35,23 @@ body {
 }
 
 a {
-  width: 3em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-img {
-  max-width: 25%;
+#cross {
+  max-width: 5%;
 }
 
 span {
   color: #f95c0d;
+}
+
+@media screen and (min-width: 500px) {
+  #center {
+    width: 100%;
+  }
+  #cross {
+    max-width: 2%;
+  }
 }

@@ -7,6 +7,7 @@ function Login() {
       <div id="center">
         <a href>
           <img
+            id="cross"
             alt="cross"
             src="https://cdn.discordapp.com/attachments/828980599762321419/834365801603268608/kisspng-computer-icons-christian-cross-icon-design-clip-ar-5afc2de4bc8555.6906750415264762607722-rem.png"
           />
