@@ -3,6 +3,8 @@
 #wrapper {
   background-color: #fdf6d3;
   margin-top: 1em;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -36,4 +38,7 @@ span {
 }
 .param {
   margin: 1em;
+}
+h1 {
+  padding: 1em;
 }
