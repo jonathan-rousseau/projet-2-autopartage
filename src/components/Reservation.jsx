@@ -45,13 +45,19 @@ function Reservation() {
           <button
             className="boutton"
             type="button"
-            time={time}
-            onChange={(data) => setTime(data.formatted12)}
             onClick={() => setIsShowTime(!isShowTime)}
           >
             Horaire
           </button>
-          {isShowTime ? <TimeKeeper /> : ''}
+          <span>Time selected : {time}</span>
+          {isShowTime ? (
+            <TimeKeeper
+              time={time}
+              onChange={(newTime) => setTime(newTime.formatted12)}
+            />
+          ) : (
+            ''
+          )}
           <button
             className="boutton"
             type="button"
@@ -62,6 +68,7 @@ function Reservation() {
           >
             Localisation
           </button>
+
           {isShowMap ? <Stations /> : ''}
           <div className="tarif">
             <div className="liberty">
