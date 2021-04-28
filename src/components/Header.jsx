@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import { ReactComponent as CloseMenu } from '../assets/x.svg';
 import { ReactComponent as MenuIcon } from '../assets/menu.svg';
@@ -31,25 +32,30 @@ const Header = () => {
           src="/images/logo_Marguerite-removebg.png"
           alt="Logo marguerite"
         />
-        <ul className={click ? 'nav-options active' : 'nav-options'}>
-          <li className="option">
-            <a href="/">Home</a>
-          </li>
-          <li className="option">
-            <a href="/">Mode demploi</a>
-          </li>
-          <li className="option">
-            <a href="/">Réservation marguerite</a>
-          </li>
-          <li className="option mobile-option">
-            <a href="/">Contact</a>
-          </li>
+        <ul
+          className={click ? 'nav-options active' : 'nav-options'}
+          onClick={handleClick}
+        >
+          <Link to="/">
+            <li className="option">Home</li>
+          </Link>
+          <Link to="/Manual">
+            <li className="option">Mode demploi</li>
+          </Link>
+          <Link to="/Reservation">
+            <li className="option">Réservation marguerite</li>
+          </Link>
+          <Link to="/Contact">
+            <li className="option">Contact</li>
+          </Link>
         </ul>
-        <img
-          className="logo-profil"
-          src="/images/logo-profil-removebg.png"
-          alt="logo-profil"
-        />
+        <Link to="/Login">
+          <img
+            className="logo-profil"
+            src="/images/logo-profil-removebg.png"
+            alt="logo-profil"
+          />
+        </Link>
       </div>
       <div className="header-bottom">
         <img

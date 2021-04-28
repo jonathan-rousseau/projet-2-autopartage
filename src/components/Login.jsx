@@ -1,17 +1,18 @@
 import React from 'react';
 import './login.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
     <div className="wrapper">
       <div id="center">
-        <a href>
+        <Link to="/cross">
           <img
             id="cross"
             alt="cross"
             src="https://cdn.discordapp.com/attachments/828980599762321419/834365801603268608/kisspng-computer-icons-christian-cross-icon-design-clip-ar-5afc2de4bc8555.6906750415264762607722-rem.png"
           />
-        </a>
+        </Link>
         <div id="connexion" className="titre">
           Connexion
         </div>
