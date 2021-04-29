@@ -1,19 +1,29 @@
-import React from 'react';
 import './profil.css';
 
 function ElementReservation(props) {
   // eslint-disable-next-line react/prop-types
-  const { commandDate, price, reservDate } = props;
+  const { commandDate, price, reservDate, id, disableReservation } = props;
+
+  function handleClick() {
+    disableReservation(id);
+  }
+
   return (
     <div className="white">
       <div id="inline">
-        <h3>Commande effectuée le {commandDate}</h3>
-        <div id="euros">Total {price} Euros</div>
+        <h3>
+          <span>Commande</span> effectuée le {commandDate}
+        </h3>
+        <div id="euros">Total {price} €</div>
       </div>
       <div id="inline">
-        <section id="reservation">Réservation pour le {reservDate}</section>
+        <section id="reservation">
+          <span>Réservation</span> pour le {reservDate}
+        </section>
         <h3>
-          <span>Annuler</span> la réservation
+          <button id="button-cancel" type="button" onClick={handleClick}>
+            Annuler
+          </button>
         </h3>
       </div>
     </div>
