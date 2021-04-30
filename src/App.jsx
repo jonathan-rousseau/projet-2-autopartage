@@ -1,3 +1,5 @@
+import Profil from './components/Profil';
+
 import Header from './components/Header';
 
 import Inscription from './components/Inscription';
@@ -8,6 +10,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+
+      <Profil />
 
       <Inscription />
 
