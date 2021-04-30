@@ -1,6 +1,4 @@
-
 import Profil from './components/Profil';
-
 
 import Header from './components/Header';
 
@@ -15,11 +13,9 @@ function App() {
 
       <Profil />
 
-
       <Inscription />
 
       <Login />
-
     </div>
   );
 }
