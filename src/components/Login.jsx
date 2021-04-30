@@ -6,7 +6,7 @@ function Login() {
   return (
     <div className="wrapper">
       <div id="center">
-        <Link to="/cross">
+        <Link to="/">
           <img
             id="cross"
             alt="cross"

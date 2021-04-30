@@ -23,7 +23,7 @@ form {
   border: none;
 }
 
-#form-diff-citynumber{
+#form-diff-citynumber {
   width: 10em;
   height: 3em;
   margin-bottom: 1em;
@@ -31,7 +31,7 @@ form {
   border: none;
 }
 
-#form-diff-city{
+#form-diff-city {
   width: 11em;
   height: 3em;
   border: none;
@@ -68,14 +68,16 @@ span {
 .form-group {
   display: flex;
   justify-content: center;
+  margin-top: 15px;
 }
 
 .form-check-label {
   display: flex;
+  width: 5em;
 }
 
 button {
-  background-color:white;
+  background-color: white;
 }
 
 
