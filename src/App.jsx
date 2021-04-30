@@ -1,3 +1,5 @@
+import React from 'react';
+import Reservation from './components/Reservation';
 import Profil from './components/Profil';
 
 import Header from './components/Header';
@@ -10,6 +12,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+
+      <Reservation />
 
       <Profil />
 
