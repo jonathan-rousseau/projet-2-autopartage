@@ -7,7 +7,7 @@ function Profil() {
     {
       commandDate: '01/01/2021',
       price: 5,
-      reservDate: '99/99/9999',
+      reservDate: '12/03/2015',
       active: true,
       id: 1,
     },
@@ -66,15 +66,3 @@ function Profil() {
 }
 
 export default Profil;
-
-/*
-Créer un conposant de réservation, (valeur en dure)
-Tester que sa s'affiche bien dans le profil
-Envoyer les valeurs en props
-Créer un tableau d'objet de réservation et faire un map sur ce tableau pour afficher la liste des réservations
-Filter pour afficher ou cacher le composant (statelifting)
-
-
-
-
-*/
