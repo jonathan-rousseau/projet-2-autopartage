@@ -20,7 +20,7 @@ function Profil() {
     },
     {
       commandDate: '20/12/2019',
-      price: 5,
+      price: 20,
       reservDate: '03/03/2017',
       active: true,
       id: 3,

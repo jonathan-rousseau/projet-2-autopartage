@@ -12,7 +12,7 @@ function ElementReservation(props) {
     <div className="white">
       <div id="inline">
         <h3>
-          <span>Commande</span> effectuée le {commandDate}
+          <span>Commande </span> &nbsp; effectuée le {commandDate}
         </h3>
         <div id="euros">Total {price} €</div>
       </div>
