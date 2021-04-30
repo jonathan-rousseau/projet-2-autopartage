@@ -3,8 +3,8 @@ import './Reservation.css';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import TimeKeeper from 'react-timekeeper';
-import axios from 'axios';
-import Stations from './Stations';
+import 'leaflet/dist/leaflet.css';
+import Map from './Map';
 
 const fidelite =
   'https://media.discordapp.net/attachments/828980599762321419/832548533076754472/birthday-gifts.jpg';
@@ -14,24 +14,10 @@ function Reservation() {
   const [isShowTime, setIsShowTime] = useState(false);
   const [isShowMap, setIsShowMap] = useState(false);
 
-  const [time, setTime] = useState('12:34pm');
-  // eslint-disable-next-line no-unused-vars
-  const [location, setLocation] = useState([]);
-
-  const loadMap = () => {
-    axios
-      .get(
-        'https://data.nantesmetropole.fr/api/records/1.0/search/?dataset=244400404_stations-marguerite-nantes-metropole&q='
-      )
-      .then((response) => {
-        console.log(response);
-        setLocation(response.data);
-      });
-  };
+  const [time, setTime] = useState('12:00pm');
 
   return (
     <div className="container">
-      <header />
       <main>
         <div className="direction-boutton">
           <button
@@ -49,7 +35,7 @@ function Reservation() {
           >
             Horaire
           </button>
-          <span>Time selected : {time}</span>
+
           {isShowTime ? (
             <TimeKeeper
               time={time}
@@ -58,18 +44,19 @@ function Reservation() {
           ) : (
             ''
           )}
+
           <button
             className="boutton"
             type="button"
             onClick={() => {
               setIsShowMap(!isShowMap);
-              loadMap();
             }}
           >
             Localisation
           </button>
-
-          {isShowMap ? <Stations /> : ''}
+        </div>
+        {isShowMap ? <Map /> : ''}
+        <div className="direction-boutton">
           <div className="tarif">
             <div className="liberty">
               <h1>Formule Liberté</h1>
@@ -91,10 +78,9 @@ function Reservation() {
               </button>
             </div>
           </div>
-          <div>
-            <img className="fidelite" src={fidelite} alt="fidelite" />
-          </div>
-          <footer />
+        </div>
+        <div>
+          <img className="fidelite" src={fidelite} alt="fidelite" />
         </div>
       </main>
     </div>
