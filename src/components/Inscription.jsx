@@ -67,8 +67,8 @@ function Inscription() {
             />
             <input
               id="form"
-              name="adress"
-              type="adress"
+              name="address"
+              type="address"
               placeholder="Adresse"
             />
             <div>
