@@ -7,28 +7,36 @@
   display: flex;
   justify-content: center;
   text-align: center;
-
-  padding-bottom: 5em;
-
-
 }
 
 form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
-
-login {
-  width: 100%;
+  margin-top: 20px;
 }
 
 #form {
   width: 100%;
-  margin-bottom: 1em;
-  border-radius: 5px;
-  border: none;
   height: 3em;
+  margin-bottom: 1em;
+  border: none;
+}
+
+#form-diff-citynumber{
+  width: 10em;
+  height: 3em;
+  margin-bottom: 1em;
+  margin-right: 25px;
+  border: none;
+}
+
+#form-diff-city{
+  width: 11em;
+  height: 3em;
+  border: none;
+  padding: 0;
+  margin-right: -4px;
 }
 
 #center {
@@ -49,22 +57,35 @@ a {
   display: flex;
   justify-content: flex-end;
 }
-#cross {
+.cross {
   max-width: 5%;
 }
 
 span {
   color: #f95c0d;
 }
-button {
-  background-color: white;
+
+.form-group {
+  display: flex;
+  justify-content: center;
 }
+
+.form-check-label {
+  display: flex;
+}
+
+button {
+  background-color:white;
+}
+
+
+/* ****************** DESKTOP ******************* */
 
 @media screen and (min-width: 500px) {
   #center {
     width: 100%;
   }
-  #cross {
+  .cross {
     max-width: 2%;
     display: none;
   }
