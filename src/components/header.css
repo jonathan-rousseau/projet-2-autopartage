@@ -6,6 +6,10 @@
   box-shadow: 2px wit2px rgb(66, 66, 66);
 }
 
+Link {
+  width: 7 em;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -47,13 +51,10 @@
 
 .nav-options {
   padding-left: 25px;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, auto);
   grid-gap: 50px;
   list-style-type: none;
-}
-.mobile-option {
-  display: none;
 }
 
 .option :hover {
@@ -105,7 +106,7 @@
     padding-left: 0px;
     margin: 0;
     height: 100%;
-    text-align: center;
+    align-items: center;
   }
 
   .menu-icon {
