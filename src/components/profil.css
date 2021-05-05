@@ -21,6 +21,14 @@ body {
   justify-content: flex-end;
   font-style: italic;
   margin: 1em;
+  border: none;
+  font-size: 17px;
+}
+.button-logout {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
 }
 
 #inline {
@@ -34,6 +42,9 @@ body {
 
 .param {
   margin: 1em;
+}
+#last-param {
+  padding-bottom: 3em;
 }
 h1 {
   padding: 1em;
@@ -56,4 +67,14 @@ h3 {
 
 span {
   font-weight: bold;
+}
+
+#simone {
+  margin-left: 10px;
+}
+.simone img {
+  max-width: 25%;
+  border-radius: 50%;
+  margin: 10px;
+  width: 14em;
 }

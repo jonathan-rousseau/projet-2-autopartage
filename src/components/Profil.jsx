@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ElementReservation from './ElementReservation';
 import './profil.css';
+import ImageUser from '../assets/simone.jpg';
 
 function Profil() {
   const [infoReservation, setInfoReservation] = useState([
@@ -38,8 +40,19 @@ function Profil() {
   }
   return (
     <div>
-      <div id="connexion">Se déconnecter</div>
-      <div>Jean Benguigui</div>
+      <div className="button-logout">
+        <div className="simone">
+          <img src={ImageUser} alt="simone" />
+        </div>
+        <div>
+          <Link style={{ textDecoration: 'none' }} to="/">
+            <button type="button" id="connexion">
+              Se déconnecter
+            </button>
+          </Link>
+        </div>
+      </div>
+      <div id="simone">Simone De Beauvoir</div>
       <section id="wrapper">
         <h1>Historique de réservations</h1>
         {infoReservation
@@ -59,7 +72,9 @@ function Profil() {
         <h1 className="param">Paramètres</h1>
         <div className="param">Changer sa photo</div>
         <div className="param">Changer sa description</div>
-        <div className="param">Changer la langage</div>
+        <div className="param" id="last-param">
+          Changer le langage
+        </div>
       </section>
     </div>
   );
