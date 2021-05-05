@@ -1,0 +1,17 @@
+.carré-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carré {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.stylecarrée {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9e373;
+}
