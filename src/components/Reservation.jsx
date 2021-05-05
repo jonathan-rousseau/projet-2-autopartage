@@ -63,11 +63,14 @@ function Reservation() {
           </button>
         </div>
         {isShowMap ? <Map setSelectedStation={setSelectedStation} /> : ''}
-        <div>
-          <p>
-            Récapitualtif : {choiceDate.toString()} {time}{' '}
-            {selectedStation ? selectedStation.nom : ''}
-          </p>
+        <div className="recapitulatif-container">
+          <div className="recapitulatif">
+            <p>
+              <span className="title-recapitulatif">Récapitualtif : </span>
+              {choiceDate.toString()} {time}{' '}
+              {selectedStation ? selectedStation.nom : ''}
+            </p>
+          </div>
         </div>
         <div className="direction-boutton">
           <div className="tarif">
