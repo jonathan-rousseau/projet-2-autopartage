@@ -1,9 +1,10 @@
 import React from 'react';
+import Explication from './Explication';
 
 function Manual() {
   return (
     <div>
-      <h1>Manual</h1>
+      <Explication />
     </div>
   );
 }
