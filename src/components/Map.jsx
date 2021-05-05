@@ -1,5 +1,5 @@
 import './Map.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   MapContainer,
   TileLayer,
@@ -8,7 +8,7 @@ import {
   useMapEvents,
 } from 'react-leaflet';
 import L from 'leaflet';
-import maptest from '../margueritemap.json';
+import axios from 'axios';
 import logocar from '../images/image_icon_map_marker.png';
 
 const marks = L.icon({
@@ -19,9 +19,19 @@ const marks = L.icon({
   shadowAnchor: [4, 62], // the same for the shadow
   popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
 });
-function Map() {
-  const stations = maptest.features;
+function Map(props) {
+  const [stations, setStations] = useState([]);
 
+  useEffect(() => {
+    axios
+      .get(
+        'https://data.nantesmetropole.fr/api/records/1.0/search/?dataset=244400404_stations-marguerite-nantes-metropole&rows=1000'
+      )
+      .then((response) => {
+        console.log(response);
+        setStations(response.data.records);
+      });
+  }, []);
   function LocationMarker() {
     const [position, setPosition] = useState(null);
     const map = useMapEvents({
@@ -47,23 +57,32 @@ function Map() {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {stations.map((station) => (
-          <Marker
-            position={station.geometry.coordinates.reverse()}
-            icon={marks}
-          >
-            <Popup>
-              <div className="titregras">{station.properties.nom} </div>
-              <div className="dispotext">
-                {station.properties.cp} <br />
-                {station.properties.adresse} <br />
-                {station.properties.ouverture} <br />
-                {station.properties.tel} <br />
-                <br />
-              </div>
-            </Popup>
-          </Marker>
-        ))}
+        {stations.map((records) => {
+          const { coordinates } = records.fields.geo_shape;
+          return (
+            <Marker
+              key={records.recordid}
+              position={[coordinates[1], coordinates[0]]}
+              icon={marks}
+            >
+              <Popup>
+                <button
+                  type="button"
+                  onClick={() => props.setSelectedStation(records.fields)}
+                >
+                  Choisir
+                </button>
+                <div className="titregras">{records.fields.nom} </div>
+                <div className="dispotext">
+                  {records.fields.insee} <br />
+                  {records.fields.adresse} <br />
+                  {records.fields.ouverture} <br />
+                  <br />
+                </div>
+              </Popup>
+            </Marker>
+          );
+        })}
         <LocationMarker />
       </MapContainer>
     </div>
