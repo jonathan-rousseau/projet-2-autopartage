@@ -4,16 +4,14 @@ import './manual.css';
 function Manual() {
   return (
     <div className="carré-container">
-      <h1>Guide du bon conducteur</h1>
-      <div className="carré">
-        <div className="stylecarrée">
-          <h1>I-La vitesse, tu limiteras</h1>
-          <h2>II- L&apos; alcool / stupéfiants, tu bannieras</h2>
-          <h3>III- Le téléphone, tu le poseras</h3>
-          <h4>IV-Les mains sur le volant, tu garderas</h4>
-          <h5>V-Les bonnes manières sur la route, tu auras</h5>
-          <h6>VI- La distance de sécurité, tu garderas</h6>
-        </div>
+      <div className="carré-container2">
+        <h1>Guide du bon conducteur</h1>
+        <p>I-La vitesse, tu limiteras</p>
+        <p>II- L&apos; alcool / stupéfiants, tu bannieras</p>
+        <p>III- Le téléphone, tu le poseras</p>
+        <p>IV-Les mains sur le volant, tu garderas</p>
+        <p>V-Les bonnes manières sur la route, tu auras</p>
+        <p>VI- La distance de sécurité, tu garderas</p>
       </div>
     </div>
   );
