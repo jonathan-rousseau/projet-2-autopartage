@@ -66,18 +66,21 @@ function Map(props) {
               icon={marks}
             >
               <Popup>
-                <button
-                  type="button"
-                  onClick={() => props.setSelectedStation(records.fields)}
-                >
-                  Choisir
-                </button>
                 <div className="titregras">{records.fields.nom} </div>
                 <div className="dispotext">
                   {records.fields.insee} <br />
                   {records.fields.adresse} <br />
                   {records.fields.ouverture} <br />
                   <br />
+                </div>
+                <div className="containerBouton">
+                  <button
+                    className="boutonChoisir"
+                    type="button"
+                    onClick={() => props.setSelectedStation(records.fields)}
+                  >
+                    Choisir
+                  </button>
                 </div>
               </Popup>
             </Marker>
