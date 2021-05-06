@@ -25,9 +25,9 @@ footer div {
 
 #logo {
   height: 4em;
-  margin-left: 2px;
-  margin-right: 0px;
+  margin-left: 20px;
 }
+
 .contentFooter {
   margin: 2px;
   border-radius: 25px;
@@ -44,10 +44,6 @@ footer div {
   justify-content: flex-start;
 }
 
-#logo {
-  border-radius: 12px;
-  margin: 2em;
-}
 #text {
   width: 15em;
   display: flex;

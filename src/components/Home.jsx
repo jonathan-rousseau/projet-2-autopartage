@@ -10,7 +10,6 @@ function Home() {
       <div className="containerHome">
         <div className="postionImageText" />
         <img className="imageMarguerite" alt="tan" src={logoMarguerite} />
-        <div className="textImageMarguerite">Réserver votre marguerite</div>
       </div>
       <div className="containerAdvantage">
         <div className="Advantage">
