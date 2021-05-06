@@ -17,7 +17,6 @@ function Reservation() {
   const [selectedStation, setSelectedStation] = useState(null);
 
   const [time, setTime] = useState('12:00pm');
-  console.log(selectedStation);
 
   return (
     <div className="container">

@@ -37,7 +37,6 @@ function Map(props) {
         'https://data.nantesmetropole.fr/api/records/1.0/search/?dataset=244400404_stations-marguerite-nantes-metropole&rows=1000'
       )
       .then((response) => {
-        console.log(response);
         setStations(response.data.records);
       });
   }, []);
