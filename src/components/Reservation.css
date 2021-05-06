@@ -1,6 +1,9 @@
 body {
   width: 100%;
 }
+.containerReservation {
+  display: flex;
+}
 .boutton {
   display: flex;
   justify-content: center;

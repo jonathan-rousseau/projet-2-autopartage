@@ -19,7 +19,7 @@ function Reservation() {
   const [time, setTime] = useState('12:00pm');
 
   return (
-    <div className="container">
+    <div className="containerReservation">
       <main>
         <div className="direction-boutton">
           <button
