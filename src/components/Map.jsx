@@ -10,6 +10,7 @@ import {
 import L from 'leaflet';
 import maptest from '../margueritemap.json';
 import logocar from '../images/image_icon_map_marker.png';
+import logolocal from '../images/png-marker-noir-local-removebg-preview.png';
 
 const marks = L.icon({
   iconUrl: logocar,
@@ -19,6 +20,15 @@ const marks = L.icon({
   shadowAnchor: [4, 62], // the same for the shadow
   popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
 });
+const localMarks = L.icon({
+  iconUrl: logolocal,
+
+  iconSize: [70, 50], // size of the icon
+  iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62], // the same for the shadow
+  popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+});
+
 function Map() {
   const stations = maptest.features;
 
@@ -35,7 +45,7 @@ function Map() {
     });
 
     return position === null ? null : (
-      <Marker position={position}>
+      <Marker position={position} icon={localMarks}>
         <Popup>You are here</Popup>
       </Marker>
     );
