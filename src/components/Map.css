@@ -13,3 +13,21 @@
   padding: 10px;
   text-align: center;
 }
+.containerBouton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boutonChoisir {
+  background-color: black;
+  color: orangered;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+.boutonChoisir:hover {
+  color: white;
+  text-shadow: 2px 2px 2px orangered;
+}

@@ -13,8 +13,11 @@ function Reservation() {
   const [isShow, setIsShow] = useState(false);
   const [isShowTime, setIsShowTime] = useState(false);
   const [isShowMap, setIsShowMap] = useState(false);
+  const [choiceDate, setChoiceDate] = useState(new Date());
+  const [selectedStation, setSelectedStation] = useState(null);
 
   const [time, setTime] = useState('12:00pm');
+  console.log(selectedStation);
 
   return (
     <div className="container">
@@ -27,7 +30,11 @@ function Reservation() {
           >
             Date
           </button>
-          {isShow ? <Calendar /> : ''}
+          {isShow ? (
+            <Calendar onChange={setChoiceDate} value={choiceDate} />
+          ) : (
+            ''
+          )}
           <button
             className="boutton"
             type="button"
@@ -55,7 +62,16 @@ function Reservation() {
             Localisation
           </button>
         </div>
-        {isShowMap ? <Map /> : ''}
+        {isShowMap ? <Map setSelectedStation={setSelectedStation} /> : ''}
+        <div className="recapitulatif-container">
+          <div className="recapitulatif">
+            <p>
+              <span className="title-recapitulatif">Récapitualtif : </span>
+              {choiceDate.toString()} {time}{' '}
+              {selectedStation ? selectedStation.nom : ''}
+            </p>
+          </div>
+        </div>
         <div className="direction-boutton">
           <div className="tarif">
             <div className="liberty">
