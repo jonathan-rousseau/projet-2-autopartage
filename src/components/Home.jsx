@@ -3,7 +3,7 @@ import Explication from './Explication';
 import './home.css';
 
 const logoMarguerite =
-  'https://www.nantaise.fr/wp-content/uploads/2016/09/marguerite-nantes-voiture-autopartage-avis-blog1.jpg';
+  'https://media.discordapp.net/attachments/828980599762321419/839966386268667924/image_marguerite.jpg';
 function Home() {
   return (
     <div>
