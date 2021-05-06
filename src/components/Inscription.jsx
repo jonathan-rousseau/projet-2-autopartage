@@ -1,18 +1,19 @@
 import React from 'react';
 import './Inscription.css';
 import './Inscription.scss';
+import { Link } from 'react-router-dom';
 
 function Inscription() {
   return (
     <div className="wrapper">
       <div id="center">
-        <a href>
+        <Link to="/Login">
           <img
             className="cross"
             alt="cross"
             src="https://cdn.discordapp.com/attachments/828980599762321419/834365801603268608/kisspng-computer-icons-christian-cross-icon-design-clip-ar-5afc2de4bc8555.6906750415264762607722-rem.png"
           />
-        </a>
+        </Link>
         <div className="titre">
           <strong>
             Inscrivez-vous à <span>marguerite</span>
@@ -103,10 +104,11 @@ function Inscription() {
             type="numberphone"
             placeholder="Mobile"
           />
-
-          <button id="form" type="submit">
-            <strong>Valider</strong>
-          </button>
+          <Link style={{ textDecoration: 'none' }} to="/Profil">
+            <button id="form" type="submit">
+              <strong>Valider</strong>
+            </button>
+          </Link>
         </form>
       </div>
     </div>

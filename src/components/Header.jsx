@@ -37,16 +37,16 @@ const Header = () => {
           onClick={handleClick}
         >
           <Link to="/">
-            <li className="option">Home</li>
+            <li className="option">HOME</li>
           </Link>
           <Link to="/Manual">
-            <li className="option">Mode demploi</li>
+            <li className="option">MODE D&apos;EMPLOI</li>
           </Link>
           <Link to="/Reservation">
-            <li className="option">Réservation marguerite</li>
+            <li className="option">RESERVATION MARGUERITE</li>
           </Link>
           <Link to="/Contact">
-            <li className="option">Contact</li>
+            <li className="option">CONTACT</li>
           </Link>
         </ul>
         <Link to="/Login">

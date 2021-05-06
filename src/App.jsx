@@ -4,7 +4,7 @@ import Reservation from './components/Reservation';
 import Profil from './components/Profil';
 
 import Header from './components/Header';
-// import Home from './components/Home';
+import Home from './components/Home';
 import Manual from './components/Manual';
 import Contact from './components/Contact';
 import Login from './components/Login';
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Route path="/" exact component={Reservation} />
+        <Route path="/" exact component={Home} />
         <Route path="/Manual" exact component={Manual} />
         <Route path="/Contact" exact component={Contact} />
         <Route path="/Login" exact component={Login} />
