@@ -1,25 +1,26 @@
-.boxcontainer{
-  display:flex;
+.boxcontainer {
+  display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
+  padding-top: 25px;
 }
 
-.container{
+.container {
   width: 16em;
   background-color: #f9e373;
   padding: 1em;
 }
 
-.boxcontainer h1{
+.boxcontainer h1 {
   position: absolute;
   padding: 1em;
   margin-top: -50px;
   font-weight: bolder;
 }
 
-.boxmargin{
+.boxmargin {
   margin: 2%;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
