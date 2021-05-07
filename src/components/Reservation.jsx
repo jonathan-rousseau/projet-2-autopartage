@@ -67,7 +67,7 @@ function Reservation() {
           <div className="recapitulatif">
             <p>
               <span className="title-recapitulatif">Récapitualtif : </span>
-              {choiceDate.toString()} {time}{' '}
+              {choiceDate.toLocaleDateString('FR-fr')} {time}{' '}
               {selectedStation ? selectedStation.nom : ''}
             </p>
           </div>
