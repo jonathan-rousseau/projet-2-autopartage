@@ -38,6 +38,9 @@ form {
   padding: 0;
   margin-right: -4px;
 }
+.codepostal-city {
+  display: flex;
+}
 
 #center {
   display: flex;
@@ -74,11 +77,10 @@ span {
   display: flex;
   width: 5em;
 }
-
-button {
-  background-color: white;
+.button-valider {
+  background-color: black;
+  color: white;
 }
-
 
 /* ****************** DESKTOP ******************* */
 

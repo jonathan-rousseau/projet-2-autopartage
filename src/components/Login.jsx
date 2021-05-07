@@ -14,6 +14,9 @@ function Login() {
           />
         </Link>
         <div className="titre">
+          <strong>Connexion</strong>
+        </div>
+        <div className="titre">
           Accéder à votre compte <span>Marguerite</span>
         </div>
         <form className="login">
@@ -30,12 +33,12 @@ function Login() {
             placeholder=" mot de passe"
           />
           <Link style={{ textDecoration: 'none' }} to="/Profil">
-            <button id="form" type="submit">
+            <button className="button-connexion" id="form" type="submit">
               <strong className="style-none">Se connecter</strong>
             </button>
           </Link>
           <Link style={{ textDecoration: 'none' }} to="/Inscription">
-            <button id="form" type="submit">
+            <button className="button-inscription" id="form" type="submit">
               <strong>Inscrivez-vous ici</strong>
             </button>
           </Link>
