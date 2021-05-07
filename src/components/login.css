@@ -9,8 +9,6 @@
   text-align: center;
 
   padding-bottom: 5em;
-
-
 }
 
 form {
@@ -19,8 +17,15 @@ form {
   margin: 0 auto;
 }
 
-login {
-  width: 100%;
+input[type='submit'] {
+  background: rgb(5, 0, 0);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+input {
+  border: none;
 }
 
 #form {
@@ -59,6 +64,15 @@ span {
 button {
   background-color: white;
 }
+.button-connexion {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+.button-inscription {
+  background-color: black;
+  color: white;
+}
 
 .style-none {
   text-decoration: none;
@@ -74,5 +88,4 @@ button {
     max-width: 2%;
     display: none;
   }
-
 }
