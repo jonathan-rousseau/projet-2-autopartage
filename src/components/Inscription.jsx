@@ -82,7 +82,7 @@ function Inscription() {
             placeholder="Prénom"
           />
           <input id="form" name="adress" type="adress" placeholder="Adresse" />
-          <div>
+          <div className="codepostal-city">
             <input
               id="form-diff-citynumber"
               name="citynumber"
@@ -105,7 +105,7 @@ function Inscription() {
             placeholder="Mobile"
           />
           <Link style={{ textDecoration: 'none' }} to="/Profil">
-            <button id="form" type="submit">
+            <button className="button-valider" id="form" type="submit">
               <strong>Valider</strong>
             </button>
           </Link>
